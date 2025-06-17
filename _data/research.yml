@@ -1,0 +1,49 @@
+# 研究项目
+projects:
+  - title: "Multimodal Knowledge Graph Construction"
+    icon: "🔗"
+    description: "Developing advanced methods for automatically constructing knowledge graphs from multimodal data sources including text, images, and structured data."
+    featured: true
+    technologies: ["PyTorch", "Transformers", "Graph Neural Networks"]
+    link: "#publications"
+    
+  - title: "Event Extraction and Understanding"
+    icon: "📊"
+    description: "Advanced event detection and extraction systems that can identify complex events and their arguments from unstructured text."
+    featured: true
+    technologies: ["BERT", "BiLSTM", "CRF"]
+    link: "#publications"
+    
+  - title: "Large Language Models for Knowledge Tasks"
+    icon: "🤖"
+    description: "Leveraging large language models for knowledge-intensive tasks including entity alignment, relation extraction, and knowledge completion."
+    featured: true
+    technologies: ["GPT", "T5", "Fine-tuning"]
+    link: "#publications"
+    
+  - title: "Cross-modal Information Retrieval"
+    icon: "🔍"
+    description: "Building systems that can retrieve and understand information across different modalities, particularly text-video retrieval applications."
+    featured: false
+    technologies: ["Vision Transformers", "CLIP", "Contrastive Learning"]
+    link: "#publications"
+    
+  - title: "Few-shot Learning for NLP"
+    icon: "⚡"
+    description: "Developing few-shot and zero-shot learning methods for natural language processing tasks, particularly in cross-domain scenarios."
+    featured: false
+    technologies: ["Meta-learning", "Prompt Engineering", "Transfer Learning"]
+    link: "#publications"
+
+# 研究统计
+research_stats:
+  total_papers: 31
+  first_author_papers: 14
+  h_index: 15
+  citations: 500+
+  patents: 9
+  
+# 主要会议和期刊
+venues:
+  top_conferences: ["WWW", "ACL", "IJCAI", "AAAI", "ACMMM", "CIKM"]
+  top_journals: ["TASLP", "TNNLS", "Neural Networks", "KBS"] 

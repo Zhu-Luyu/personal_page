@@ -1,0 +1,95 @@
+# Site settings
+title: "Qian Li | 李倩"
+description: "Postdoctoral Researcher in Knowledge Graph at Beijing University of Posts and Telecommunications"
+url: "https://xiaoqian19940510.github.io"
+baseurl: ""
+
+# Author information
+author:
+  name: "Qian Li"
+  email: "li.qian@bupt.edu.cn"
+  
+# Social links
+social:
+  github: "xiaoqian19940510"
+  google_scholar: "YOUR_GOOGLE_SCHOLAR_ID"
+  email: "li.qian@bupt.edu.cn"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title/
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Pagination
+paginate: 5
+paginate_path: "/news/page:num/"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Site navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Research"
+    url: "/#research"
+  - title: "Publications"
+    url: "/#publications"
+  - title: "Awards"
+    url: "/#awards"
+  - title: "Join Us"
+    url: "/#openings"
+  - title: "News"
+    url: "/news/"
+
+# Features
+features:
+  enable_dark_mode: true
+  enable_search: true
+  enable_comments: false
+  
+# Analytics (optional)
+google_analytics: ""
+
+# SEO
+lang: "en-US"
+timezone: "Asia/Shanghai" 
