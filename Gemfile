@@ -12,4 +12,4 @@ gem 'jekyll-seo-tag'
 gem 'webrick'
 
 # GitHub Pages compatibility (comment out for local development)
-# gem 'github-pages', group: :jekyll_plugins
+gem 'github-pages', group: :jekyll_plugins
