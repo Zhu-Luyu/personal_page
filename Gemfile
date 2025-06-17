@@ -1,15 +1,11 @@
 source 'https://rubygems.org'
 
-# Jekyll core
-gem 'jekyll', '~> 4.3'
-
-# Essential plugins
-gem 'jekyll-sitemap'
-gem 'jekyll-feed'
-gem 'jekyll-seo-tag'
+# GitHub Pages gem - 包含了所有GitHub Pages支持的jekyll和插件版本
+gem 'github-pages', group: :jekyll_plugins
 
 # Development
 gem 'webrick'
 
-# GitHub Pages compatibility (comment out for local development)
-gem 'github-pages', group: :jekyll_plugins
+# Force specific versions for GitHub Pages compatibility
+gem 'nokogiri', '>= 1.4'
+gem 'i18n', '~> 1.8'

@@ -15,7 +15,7 @@ social:
   google_scholar: "YOUR_GOOGLE_SCHOLAR_ID"
   email: "li.qian@bupt.edu.cn"
 
-# Build settings
+# Build settings (GitHub Pages compatible)
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:year/:month/:day/:title/
@@ -26,35 +26,17 @@ collections:
     output: true
     permalink: /:name/
 
-# Plugins
+# GitHub Pages supported plugins only
 plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
 
-# Sass settings
-sass:
-  style: compressed
-
-# Pagination
-paginate: 5
-paginate_path: "/news/page:num/"
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-
-# Exclude files
+# kramdown settings for GitHub Pages
+kramdown:
+  syntax_highlighter: rouge
+  
+# Exclude files from processing
 exclude:
   - README.md
   - Gemfile
@@ -64,6 +46,10 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - "*.gemspec"
+  - LICENSE
+  - Dockerfile
+  - docker-compose.yml
 
 # Site navigation
 navigation:
@@ -91,4 +77,7 @@ google_analytics: ""
 
 # SEO
 lang: "en-US"
-timezone: "Asia/Shanghai" 
+timezone: "Asia/Shanghai"
+
+# GitHub Pages specific settings
+github: [metadata] 
